@@ -49,10 +49,6 @@
             ],
             "default": "Elegant serif"
         },
-        "newsletter_optin_cta": {
-            "type": "text",
-            "default": ""
-        }
     }
   },
   "gpm": {
