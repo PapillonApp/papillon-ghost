@@ -1,7 +1,7 @@
 {
   "name": "papillon",
   "description": "The official Ghost theme for the Papillon open source project.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
       "ghost": ">=5.81.0"
   },

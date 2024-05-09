@@ -649,6 +649,7 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   .post-header-overlay h1 {
     font-size: 1.8rem !important;
     line-height: 2.2rem !important;
+    margin-right: 40px !important;
   }
 }
 
@@ -991,6 +992,10 @@ pre[class*=language-] {
 
   .author-profile__bio {
     font-size: 1rem;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 
   .author-profile__meta {
