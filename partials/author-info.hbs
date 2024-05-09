@@ -1,0 +1,13 @@
+{{#primary_author}}
+  <a href="{{url}}" class="author-info">
+    {{#if profile_image}}
+      <img class="author-info__image" src="{{profile_image}}" alt="{{name}}’s Profile Image" />
+    {{/if}}
+    <div class="author-info__content">
+      <h4 class="author-info__name">{{name}}</h4>
+      {{#if bio}}
+        <p class="author-info__bio">{{bio}}</p>
+      {{/if}}
+    </div>
+  </a>
+{{/primary_author}}

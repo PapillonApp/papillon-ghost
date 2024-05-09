@@ -1,0 +1,13 @@
+<footer class="footer">
+  <div class="footer-content">
+    <p class="copyright">
+      &copy; {{date format="YYYY"}} PapillonApp et les contributeurs de l'équipe.
+    </p>
+
+    {{#if @site.secondary_navigation}}
+      <nav class="footer-navigation" role="navigation">
+        {{navigation type="secondary"}}
+      </nav>
+    {{/if}}
+  </div>
+</footer>

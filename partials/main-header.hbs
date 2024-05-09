@@ -1,0 +1,23 @@
+<header class="main-header" id="main-header">
+  <div class="container">
+    {{#if @site.logo}}
+      <a href="{{@site.url}}" class="main-header-logo">
+        <img src="{{@site.logo}}" alt="{{@site.title}} Logo" />
+      </a>
+    {{/if}}
+
+    <nav>
+      {{navigation}}
+
+      <div class="search" data-ghost-search>
+        <span class="material-symbols-outlined">search</span>
+
+        <p>
+          Rechercher
+        </p>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="header-spacer"></div>
