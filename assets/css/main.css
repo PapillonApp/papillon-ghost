@@ -643,12 +643,12 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   }
 
   .post-header-overlay {
-    background: linear-gradient(180deg, #00000000 20%, #000000e5 80%);
+    background: linear-gradient(180deg, #00000000 20%, #000000e5 0%);
   }
 
   .post-header-overlay h1 {
-    font-size: 2rem !important;
-    line-height: 2.4rem !important;
+    font-size: 1.8rem !important;
+    line-height: 2.2rem !important;
   }
 }
 
@@ -726,6 +726,8 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   font-weight: 500;
   color: #ffffff;
   font-size: 1.1rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .meta-separator-pst {
@@ -738,6 +740,24 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   font-weight: 400;
   color: #ffffffa7;
   font-size: 1.1rem;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 700px) {
+  .post__meta .post-author .author-name, .post__date {
+    font-size: 1rem;
+  }
+
+  .post__meta {
+    gap: 10px;
+  }
+
+  .post__meta .post__date:last-child, .post__meta .meta-separator-pst:last-child {
+    display: none;
+  }
 }
 
 .post__tags {
@@ -763,6 +783,12 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   background-color: #ffffff11;
 }
 
+@media screen and (max-width: 700px) {
+  .post__tags a {
+    padding: 3px 9px;
+  }
+}
+
 .post__content {
   margin: 0 auto;
   font-weight: 400;
@@ -772,6 +798,12 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   margin-bottom: 30px;
 
   text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+  .post__content {
+    font-size: 15.5px;
+  }
 }
 
 .post__content p, .post__content li, .post__content a, .post__content span {
