@@ -1,7 +1,7 @@
 {
-  "name": "papillon",
+  "name": "Papillon",
   "description": "The official Ghost theme for the Papillon open source project.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
       "ghost": ">=5.81.0"
   },
@@ -48,6 +48,10 @@
                 "Timeless mono"
             ],
             "default": "Elegant serif"
+        },
+        "newsletter_optin_cta": {
+            "type": "text",
+            "default": ""
         }
     }
   },
