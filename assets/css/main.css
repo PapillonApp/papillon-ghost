@@ -494,6 +494,7 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   display: -webkit-box; 
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  flex: 1;
 }
 
 .main-title {
