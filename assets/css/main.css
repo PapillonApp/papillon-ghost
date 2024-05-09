@@ -831,6 +831,13 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   font-family: var(--mono-font-stack);
 }
 
+.post__content p code {
+  font-family: var(--mono-font-stack);
+  background-color: #00000015;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
 pre[class*=language-] {
   border-radius: 8px;
   border: none;
