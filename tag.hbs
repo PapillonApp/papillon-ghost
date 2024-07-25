@@ -3,24 +3,12 @@
 {{> content-header}}
 <section class="tag-info container">
 
-  <section class="author-profile container">
-    <div class="author-profile__content">
-      <h1 class="author-profile__name">{{tag.name}}</h1>
-      <p class="author-profile__bio">{{tag.description}}</p>
+  <h1 class="tag-info__name">{{tag.name}}</h1>
 
-      <div class="author-profile__meta">
-        <a href="#" class="author-info-item">
-          <span class="material-symbols-outlined">list_alt</span>
-          <p>{{plural pagination.total empty='Aucun article' singular='% article' plural='% articles'}}</p>
-        </a>
+  <p class="tag-info__description">
+    {{tag.description}}
+  </p>
 
-        <a href="{{@site.url}}/tag/{{tag.slug}}/rss/" class="author-info-item">
-          <span class="material-symbols-outlined">rss_feed</span>
-          <p>RSS</p>
-        </a>
-      </div>
-    </div>
-  </section>
 </section>
 
 <main class="content">

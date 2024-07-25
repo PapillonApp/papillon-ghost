@@ -1,23 +1,22 @@
 <header class="main-header" id="main-header">
-  <div class="container">
-    {{#if @site.logo}}
-      <a href="{{@site.url}}" class="main-header-logo">
-        <img src="{{@site.logo}}" alt="{{@site.title}} Logo" />
-      </a>
-    {{/if}}
+    <div class="container">
+        <a class="main-header__title" href="{{@site.url}}">
+            {{#if @site.logo}}
+                <div class="main-header__logo">
+                    <img src="{{@site.logo}}" alt="{{@site.title}} Logo" />
+                </div>
+            {{/if}}
 
-    <nav>
-      {{navigation}}
+            <p class="main-header__blog-title">
+                {{@site.title}}
+            </p>
+        </a>
 
-      <div class="search" data-ghost-search>
-        <span class="material-symbols-outlined">search</span>
-
-        <p>
-          Rechercher
-        </p>
-      </div>
-    </nav>
-  </div>
+        <div class="search" data-ghost-search>
+            <i data-lucide="search"></i>
+            <p>
+                Rechercher
+            </p>
+        </div>
+    </div>
 </header>
-
-<div class="header-spacer"></div>

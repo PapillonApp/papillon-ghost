@@ -1,13 +1,12 @@
-<footer class="footer">
-  <div class="footer-content">
-    <p class="copyright">
-      &copy; {{date format="YYYY"}} PapillonApp et les contributeurs de l'équipe.
-    </p>
+<footer class="site-footer">
 
-    {{#if @site.secondary_navigation}}
-      <nav class="footer-navigation" role="navigation">
-        {{navigation type="secondary"}}
-      </nav>
-    {{/if}}
-  </div>
+  <small class="site-footer__attribution">
+
+    <span class="site-footer__attribution--copyright">
+      &copy; {{date format="YYYY"}}
+      <a href="{{@site.url}}/">{{@site.title}}</a> - Tous droits réservés
+    </span>&ensp;
+
+  </small>
+
 </footer>

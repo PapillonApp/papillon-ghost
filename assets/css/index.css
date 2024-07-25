@@ -1,0 +1,44 @@
+.authors-pres {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .authors-pres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.author img {
+  filter: brightness(0);
+  opacity: 0.7;
+  transition: all 0.15s;
+}
+
+.author p {
+  margin-top: 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.7;
+  user-select: none;
+}
+
+.author:hover img {
+  filter: brightness(1);
+  opacity: 1;
+  transform: translateY(-6px);
+}
+
+.author:hover p {
+  color: #29947a;
+}

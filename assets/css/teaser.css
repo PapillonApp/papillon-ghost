@@ -1,0 +1,43 @@
+.post-teaser-elem {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-teaser-elem * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.post-teaser-elem__date {
+  font-size: 0.9rem;
+  color: #00000080;
+  font-weight: 500;
+  display: flex;
+  gap: 0.3rem;
+  margin: 0;
+}
+
+.post-teaser-elem__date * {
+  display: inline-block;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.post-teaser-elem__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: fit-content;
+  border-bottom: 1px solid transparent;
+  margin: 0;
+}
+
+.post-teaser-elem:hover .post-teaser-elem__title {
+  border-bottom: 1px solid var(--ghost-accent-color);
+  color: var(--ghost-accent-color);
+}

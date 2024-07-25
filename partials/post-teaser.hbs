@@ -1,36 +1,8 @@
-<a href="{{url}}" class="post-card {{post_class}}">
-  {{#if feature_image}}
-    <div class="post-card-thumbnail" id="{{url}}-post-thumbnail">
-      <img class="post-card-image"
-        srcset="{{img_url feature_image size="xs"}} 400w,
-                {{img_url feature_image size="s"}} 600w,
-                {{img_url feature_image size="m"}} 800w"
-        src="{{img_url feature_image size="m"}}"
-        alt="{{title}}"
-      />
-    </div>
-  {{/if}}
-
-  <div class="post-card-content">
-    <p class="post-card-title">
-      {{title}}
+<article class="post-teaser {{post_class}} container">
+  <a class="post-teaser-elem" href="{{url}}">
+    <p class="post-teaser-elem__date">
+      {{date format="Do MMMM YYYY"}} — {{tags separator=", " autolink="false"}}
     </p>
-
-    <div class="post-meta">
-      <div class="post-author" href="{{primary_author.url}}">
-        <img class="author-profile-image" src="{{img_url primary_author.profile_image}}" alt="{{primary_author.name}}">
-        <p class="author-name">{{primary_author.name}}</p>
-      </div>
-
-      <div class="meta-separator"></div>
-
-      <p class="post-date">
-        le {{date format="DD MMMM YYYY"}}
-      </p>
-    </div>
-
-    <p class="post-card-excerpt">
-      {{excerpt words="33"}}
-    </p>
-  </div>
-</a>
+    <p class="post-teaser-elem__title">{{title}}</p>
+  </a>
+</article>

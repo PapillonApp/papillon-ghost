@@ -9,44 +9,32 @@
       <img class="author-profile__image" src="{{profile_image}}" alt="{{name}}’s profile image" />
     {{/if}}
 
-    <div class="author-profile__content">
-      <h1 class="author-profile__name">{{name}}</h1>
+    <h1 class="author-profile__name">{{name}}</h1>
 
-      {{#if bio}}
-        <p class="author-profile__bio">{{bio}}</p>
-        {{else}}
-        <p class="author-profile__bio">
-          To let their work speak for itself, {{name}} has not written a bio.
-        </p>
+    {{#if bio}}
+      <p class="author-profile__bio">{{bio}}</p>
+      {{else}}
+      <p class="author-profile__bio">
+        To let their work speak for itself, {{name}} has not written a bio.
+      </p>
+    {{/if}}
+
+    <div class="author-profile__meta">
+
+      {{#if location}}
+        <span class="author-info__location inline-block">
+          {{location}}
+        </span>
+        &ensp;
       {{/if}}
 
-      <div class="author-profile__meta">
-        {{#if location}}
-          <a href="#" class="author-info-item">
-            <span class="material-symbols-outlined">location_on</span>
-            <p>{{location}}</p>
-          </a>
-        {{/if}}
+      {{#if website}}
+        <span class="author-info__website inline-block">
+          <a href="{{website}}"><strong>{{website}}</strong></a>
+        </span>
+        &ensp;
+      {{/if}}
 
-        {{#if website}}
-         <a class="author-info-item" href="{{website}}" class="author-info-item__link">
-            <span class="material-symbols-outlined">link</span>
-            <p>Site web</p>
-          </a>
-        {{/if}}
-
-        <a href="{{url}}rss" class="author-info-item">
-          <span class="material-symbols-outlined">rss_feed</span>
-          <p>RSS</p>
-        </a>
-
-        {{#if twitter}}
-          <a href="https://twitter.com/{{twitter}}" class="author-info-item">
-            <span class="material-symbols-outlined">post</span>
-            <p>Twitter</p>
-          </a>
-        {{/if}}
-      </div>
     </div>
 
   </section>

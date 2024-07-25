@@ -1,8 +1,5 @@
-{{! The loop itself }}
-<div class="posts-grid">
-  {{#foreach posts}}
-      {{> post-teaser}}
-  {{/foreach}}
-</div>
-
-<br>
+{{#get "posts"}}
+{{#foreach posts from="0" to="100"}}
+{{> post-teaser}}
+{{/foreach}}
+{{/get}}
